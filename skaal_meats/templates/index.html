@@ -146,7 +146,7 @@
 
 
         <!-- Service Start -->
-        <div class="container-fluid service py-6">
+        <!-- <div class="container-fluid service py-6">
             <div class="container">
                 <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
                     <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Services</small>
@@ -251,7 +251,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="container-fluid event py-6">
             <div class="container">
@@ -262,19 +262,134 @@
                 </div>
                 <div class="wow bounceInUp" data-wow-delay="0.1s">
                     <div id="beef-div" class="meat-section" style="display: block;">
-                        <div>beef</div>
-                        <div>beef</div>
-                        <div>beef</div>
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <div class="animal-content">
+                                    <div>
+                                        <p class="ac-text">
+                                            Beef
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Sausage
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Ham
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Meat balls
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Offal
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Skin
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Oxtail
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <img src="{% static 'img/cow-meat.jpg' %}" alt="" class="img-fluid animal-content-image">
+                            </div>
+                        </div>
                     </div>
                     <div id="pork-div" class="meat-section" style="display: none;">
-                        <div>pork</div>
-                        <div>pork</div>
-                        <div>pork</div>
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <div class="animal-content">
+                                    <div>
+                                        <p class="ac-text">
+                                            Pork
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Bacon
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Ribs
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Offal
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Tenderloin
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <img src="{% static 'img/pig-meat.jpg' %}" alt="" class="img-fluid animal-content-image">
+                            </div>
+                        </div>
                     </div>
                     <div id="goat-div" class="meat-section" style="display: none;">
-                        <div>goat</div>
-                        <div>goat</div>
-                        <div>goat</div>
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <div class="animal-content">
+                                    <div>
+                                        <p class="ac-text">
+                                            Chevon
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Offal
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Skin
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Offal
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <img src="{% static 'img/goat-meat.jpg' %}" alt="" class="img-fluid animal-content-image">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1480,6 +1595,16 @@
             selectedDiv.style.display = 'block';
         }
     }
+    // function showSection(meat) {
+    //     document.querySelectorAll('.meat-section').forEach(section => {
+    //         section.classList.remove('active');
+    //     });
+
+    //     const selectedDiv = document.getElementById(`${meat}-div`);
+    //     if (selectedDiv) {
+    //         selectedDiv.classList.add('active');
+    //     }
+    // }
 </script>
 {% endblock %}
 

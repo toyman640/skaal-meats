@@ -520,11 +520,29 @@ h4, h5, h6, .h4, .h5, .h6 {
 	border: 1px solid black;
 }
 
+.animal-content {
+	padding: 5% 20%;
+}
+
+.sausage-shape {
+	border: 3px dashed #e60000 !important;
+	background-color: inherit;
+	height: 10px;
+}
+
+.animal-content-image {
+	height: 500px;
+}
+
+.ac-text {
+	font-size: 1.5em;
+	color: #000;
+	text-transform: uppercase;
+}
 /* 
 .logo {
     height: 100px;
 } */
-
 
 
 
