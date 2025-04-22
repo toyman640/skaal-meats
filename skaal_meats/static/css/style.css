@@ -8,9 +8,9 @@
  }
 
  #spinner.show {
-     transition: opacity .8s ease-out, visibility 0s linear .0s;
-     visibility: visible;
-     opacity: 1;
+    transition: opacity .8s ease-out, visibility 0s linear .0s;
+    visibility: visible;
+    opacity: 1;
  }
 /*** Spinner End ***/
 
@@ -319,6 +319,36 @@ h4, h5, h6, .h4, .h5, .h6 {
     border-bottom: 22px solid transparent;
 }
 
+.test-div {
+    border: 1px solid red;
+    height: 500px;
+}
+
+.diagonal {
+    width: 20vw; /* 20% of viewport width */
+    height: 20vw;
+    max-width: 150px; /* cap the size */
+    max-height: 150px;
+    background-color: royalblue;
+    transform: rotate(45deg); 
+}
+
+.diagonal img {
+    width: 100%; /* Make image fill the container */
+    height: 100%; /* Keep image responsive */
+    object-fit: cover; /* Ensure image covers the container and keeps aspect ratio */
+    /* transform: rotate(-45deg); */
+    transform: rotate(-45deg);
+    overflow: hidden;
+}
+
+@media (max-width: 576px) {
+    .diagonal {
+      width: 25vw;
+      height: 25vw;
+    }
+  }
+
 @keyframes pulse-border {
     0% {
         transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
@@ -467,6 +497,34 @@ h4, h5, h6, .h4, .h5, .h6 {
     color: var(--bs-primary) !important;
 }
 /*** Footer End ***/
+
+
+/* my changes */
+
+.about-list {
+  font-size: 1rem;
+}
+
+.service-button {
+	border: 1px solid red;
+	height: 50px;
+	border-bottom-left-radius: 50px;
+	border-top-right-radius: 50px;
+	font-weight: 600;
+	transition: all 1s ease;
+}
+
+.service-button:hover {
+	background-color: black !important;
+	color: red;
+	border: 1px solid black;
+}
+
+/* 
+.logo {
+    height: 100px;
+} */
+
 
 
 
