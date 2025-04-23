@@ -17,31 +17,6 @@
                     </div>
                     <div class="col-lg-5 col-md-12">
                         <img src="{% static 'img/combined-beef-t.png' %}" class="img-fluid rounded animated zoomIn" alt=""> 
-                        <!-- <div class="test-div mt-5">
-                            <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
-                              <div class="diagonal mx-4">
-                                <img src="{% static 'img/banner-beef.jpg'%}" alt="image 1">
-                              </div>
-                              <div class="diagonal mx-4">
-                                <img src="{% static 'img/banner-sausage.jpg'%}" alt="image 1">
-                              </div>
-                            </div>
-                          
-                            <div class="d-flex justify-content-center">
-                              <div class="diagonal">
-                                <img src="{% static 'img/banner-minced.jpg'%}" alt="image 1">
-                              </div>
-                            </div>
-                          
-                            <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
-                              <div class="diagonal mx-4">
-                                <img src="{% static 'img/banner-chicken.jpg'%}" alt="image 1">
-                              </div>
-                              <div class="diagonal mx-4">
-                                <img src="{% static 'img/banner-offal.jpg'%}" alt="image 1">
-                              </div>
-                            </div>
-                        </div>   -->
                     </div>
                 </div>
             </div>
@@ -254,6 +229,10 @@
         </div> -->
 
         <div class="container-fluid event py-6">
+            <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Featured Products</small>
+                <h1 class="display-5 mb-5">Discover Our Finest Cuts and Customer Favorites</h1>
+            </div>
             <div class="container">
                 <div class="d-flex  flex-wrap justify-content-center gap-5 my-4 wow bounceInUp row" data-wow-delay="0.1s">
                     <button class="service-button bg-light col-md-1" onclick="showSection('beef')">beef</button>
@@ -399,227 +378,58 @@
 
         <!-- Events Start -->
         <div class="container-fluid event py-6">
-            <div class="container">
-                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
-                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Latest Events</small>
-                    <h1 class="display-5 mb-5">Our Social & Professional Events Gallery</h1>
-                </div>
-                <div class="tab-class text-center">
-                    <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp" data-wow-delay="0.1s">
-                        <li class="nav-item p-2">
-                            <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
-                                <span class="text-dark" style="width: 150px;">All Events</span>
-                            </a>
-                        </li>
-                        <li class="nav-item p-2">
-                            <a class="d-flex py-2 mx-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-2">
-                                <span class="text-dark" style="width: 150px;">Wedding</span>
-                            </a>
-                        </li>
-                        <li class="nav-item p-2">
-                            <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-3">
-                                <span class="text-dark" style="width: 150px;">Corporate</span>
-                            </a>
-                        </li>
-                        <li class="nav-item p-2">
-                            <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-4">
-                                <span class="text-dark" style="width: 150px;">Cocktail</span>
-                            </a>
-                        </li>
-                        <li class="nav-item p-2">
-                            <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
-                                <span class="text-dark" style="width: 150px;">Buffet</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row g-4">
-                                <div class="col-lg-12">
-                                    <div class="row g-4">
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{% static 'img/event-1.jpg' %}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Wedding</h4>
-                                                    <a href="{% static 'img/event-1.jpg' %}" data-lightbox="event-1" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{% static 'img/event-2.jpg' %}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Corporate</h4>
-                                                    <a href="{% static 'img/event-2.jpg' %}" data-lightbox="event-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{% static 'img/event-3.jpg' %}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Wedding</h4>
-                                                    <a href="{% static 'img/event-3.jpg' %}" data-lightbox="event-3" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{% static 'img/event-4.jpg' %}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Buffet</h4>
-                                                    <a href="{% static 'img/event-4.jpg' %}" data-lightbox="event-4" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{% static 'img/event-5.jpg' %}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Cocktail</h4>
-                                                    <a href="{% static 'img/event-5.jpg' %}" data-lightbox="event-5" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{% static 'img/event-6.jpg' %}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Wedding</h4>
-                                                    <a href="{% static 'img/event-6.jpg' %}" data-lightbox="event-6" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{% static 'img/event-7.jpg' %}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Buffet</h4>
-                                                    <a href="{% static 'img/event-7.jpg' %}" data-lightbox="event-7" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{% static 'img/event-8.jpg' %}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Corporate</h4>
-                                                    <a href="{% static 'img/event-8.jpg' %}" data-lightbox="event-17" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-2" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-12">
-                                    <div class="row g-4">
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{% static 'img/event-1.jpg' %}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Wedding</h4>
-                                                    <a href="{% static 'img/01.jpg' %}" data-lightbox="event-8" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{% static 'img/event-2.jpg' %}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Wedding</h4>
-                                                    <a href="{% static 'img/01.jpg' %}" data-lightbox="event-9" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-3" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-12">
-                                    <div class="row g-4">
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{% static 'img/event-3.jpg' %}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Corporate</h4>
-                                                    <a href="{% static 'img/01.jpg' %}" data-lightbox="event-10" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{% static 'img/event-4.jpg' %}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Corporate</h4>
-                                                    <a href="{% static 'img/01.jpg' %}" data-lightbox="event-11" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-4" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-12">
-                                    <div class="row g-4">
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{% static 'img/event-5.jpg' %}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Cocktail</h4>
-                                                    <a href="{% static 'img/01.jpg' %}" data-lightbox="event-12" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{% static 'img/event-6.jpg' %}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Cocktail</h4>
-                                                    <a href="{% static 'img/01.jpg' %}" data-lightbox="event-13" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-5" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-12">
-                                    <div class="row g-4">
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{% static 'img/event-7.jpg' %}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Buffet</h4>
-                                                    <a href="{% static 'img/01.jpg' %}" data-lightbox="event-14" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{% static 'img/event-8.jpg' %}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Buffet</h4>
-                                                    <a href="{% static 'img/01.jpg' %}" data-lightbox="event-15" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="container my-5">
+                <div class="row g-4 wow bounceInUp" data-wow-delay="0.1s">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="card h-100">
+                      <div class="card-header">Quote 1</div>
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>A well-known quote, contained in a blockquote element.</p>
+                          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                        </blockquote>
+                      </div>
                     </div>
+                  </div>
+              
+                  <div class="col-lg-6 col-md-12">
+                    <div class="card h-100">
+                      <div class="card-header">Quote 2</div>
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>Another inspiring quote goes here.</p>
+                          <footer class="blockquote-footer">Another person in <cite title="Another Source">Another Source</cite></footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="col-lg-6 col-md-12">
+                    <div class="card h-100">
+                      <div class="card-header">Quote 3</div>
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>Yet another quote to ponder on.</p>
+                          <footer class="blockquote-footer">Famous Person in <cite title="Yet Another Source">Yet Another Source</cite></footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="col-lg-6 col-md-12">
+                    <div class="card h-100">
+                      <div class="card-header">Quote 4</div>
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>The final quote in this series.</p>
+                          <footer class="blockquote-footer">Last person in <cite title="Last Source">Last Source</cite></footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
+              
         </div>
         <!-- Events End -->
 
@@ -1605,6 +1415,39 @@
     //         selectedDiv.classList.add('active');
     //     }
     // }
+    const images = [
+        "{% static 'img/caro-1-c.jpg' %}",
+        "{% static 'img/caro-2.jpg' %}",
+        "{% static 'img/caro-3.jpeg' %}"
+    ];
+
+    const slides = [
+        {
+            image: "{% static 'img/caro-1-c.jpg' %}",
+            text: "Content 1"
+        },
+        {
+            image: "{% static 'img/caro-2.jpg' %}",
+            text: "Content 2"
+        },
+        {
+            image: "{% static 'img/caro-3.jpeg' %}",
+            text: "Content 3"
+        }
+    ];
+
+    let currentSlideIndex = 0;
+    const slider = document.getElementById('slider');
+    const sliderContent = document.getElementById('slider-content');
+
+    function updateSlider() {
+        slider.style.backgroundImage = `url('${slides[currentSlideIndex].image}')`;
+        sliderContent.textContent = slides[currentSlideIndex].text;
+        currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+    }
+
+    updateSlider(); // Show first slide
+    setInterval(updateSlider, 5000); // Change every 5 seconds
 </script>
 {% endblock %}
 
