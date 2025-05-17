@@ -1,0 +1,1032 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+{% block title %} Home {% endblock %} 
+
+{% block content %}
+        <!-- Hero Start -->
+        <div class="container-fluid bg-light py-6 my-6 mt-0">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-7 col-md-12">
+                        <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">Welcome to Skaal Meats</small>
+                        <h1 class="display-1 mb-4 animated bounceInDown">Premium <span class="text-primary">Meat Processing</span>You Can Trust</h1>
+                        <a href="" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Book Now</a>
+                        <!-- <a href="" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft">Know More</a> -->
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <img src="{% static 'img/combined-beef-t.png' %}" class="img-fluid rounded animated zoomIn" alt=""> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+        <!-- About Satrt -->
+        <div class="container-fluid py-6">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
+                        <img src="{% static 'img/meat-second.jpeg' %}" class="img-fluid rounded" alt="">
+                    </div>
+                    <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
+                        <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">About Us</small>
+                        <h1 class="display-5 mb-4">Trusted by Over 200 Clients Nationwide</h1>
+                        <p class="mb-4">
+                            We are a leading meat processing plant, dedicated to delivering top-quality meat products with unmatched precision, hygiene, and efficiency.
+                            With years of industry experience, we’ve built a reputation for reliability, consistency, and excellence. Our state-of-the-art facility operates under stringent hygiene protocols and is equipped with advanced processing technology to ensure every cut meets the highest standards. From sourcing to packaging, every step is carefully monitored to guarantee freshness, safety, and customer satisfaction. We proudly serve a wide range of clients, including retailers, wholesalers, and food service providers, helping them deliver quality meat to their customers with confidence.
+                        </p>
+                        <div class="row g-4 text-dark mb-5">
+                            <div class="col-sm-6 about-list">
+                                <i class="fas fa-hand-sparkles text-primary me-2"></i>Strict Hygiene Standards
+                            </div>
+                            <div class="col-sm-6 about-list">
+                                <i class="fas fa-cogs text-primary me-2"></i>Cutting-Edge Gear
+                            </div>
+                            <div class="col-sm-6 about-list">
+                                <i class="fas fa-box-open text-primary me-2"></i>Custom Packaging Options
+                            </div>
+                            <div class="col-sm-6 about-list">
+                                <i class="fas fa-truck text-primary me-2"></i>Nationwide Timely Delivery
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-primary py-3 px-5 rounded-pill">About Us<i class="fas fa-arrow-right ps-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Fact Start-->
+        <!-- <div class="container-fluid faqt py-6">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-7">
+                       <div class="row g-4">
+                            <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.3s">
+                                <div class="faqt-item bg-primary rounded p-4 text-center">
+                                    <i class="fas fa-users fa-4x mb-4 text-white"></i>
+                                    <h1 class="display-4 fw-bold" data-toggle="counter-up">689</h1>
+                                    <p class="text-dark text-uppercase fw-bold mb-0">Happy Customers</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.5s">
+                                <div class="faqt-item bg-primary rounded p-4 text-center">
+                                    <i class="fas fa-users-cog fa-4x mb-4 text-white"></i>
+                                    <h1 class="display-4 fw-bold" data-toggle="counter-up">107</h1>
+                                    <p class="text-dark text-uppercase fw-bold mb-0">Expert Chefs</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.7s">
+                                <div class="faqt-item bg-primary rounded p-4 text-center">
+                                    <i class="fas fa-check fa-4x mb-4 text-white"></i>
+                                    <h1 class="display-4 fw-bold" data-toggle="counter-up">253</h1>
+                                    <p class="text-dark text-uppercase fw-bold mb-0">Events Complete</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="video">
+                            <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Modal Video -->
+        <!-- <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Fact End -->
+
+
+        <!-- Service Start -->
+        <!-- <div class="container-fluid service py-6">
+            <div class="container">
+                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Services</small>
+                    <h1 class="display-5 mb-5">What We Offer</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="bg-beef col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="rounded service-item" style="background-image: url('{% static 'img/banner-beef.jpg' %}'); background-size: cover; background-position: center center;">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-cheese fa-7x text-primary mb-4"></i>
+                                    <h4 class="mb-3">Beef</h4>
+                                    <p class="mb-4">Top-quality cuts processed to meet premium standards.</p>
+                                    <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-pizza-slice fa-7x text-primary mb-4"></i>
+                                    <h4 class="mb-3">Suasage</h4>
+                                    <p class="mb-4">Flavor-packed sausages prepared to perfection.</p>
+                                    <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-hotdog fa-7x text-primary mb-4"></i>
+                                    <h4 class="mb-3">Minced Beef</h4>
+                                    <p class="mb-4">Freshly ground beef, ideal for versatile meals.</p>
+                                    <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-hamburger fa-7x text-primary mb-4"></i>
+                                    <h4 class="mb-3">Pork</h4>
+                                    <p class="mb-4">Tender pork cuts processed with utmost care.</p>
+                                    <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-wine-glass-alt fa-7x text-primary mb-4"></i>
+                                    <h4 class="mb-3">Offal</h4>
+                                    <p class="mb-4">Processed organ meats delivered clean and fresh.</p>
+                                    <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-walking fa-7x text-primary mb-4"></i>
+                                    <h4 class="mb-3">Chevon</h4>
+                                    <p class="mb-4">Fresh goat meat sourced and processed locally.</p>
+                                    <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-wheelchair fa-7x text-primary mb-4"></i>
+                                    <h4 class="mb-3">Ham</h4>
+                                    <p class="mb-4">Cured and sliced ham ready for your table.</p>
+                                    <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-utensils fa-7x text-primary mb-4"></i>
+                                    <h4 class="mb-3">Ready-to-Cook</h4>
+                                    <p class="mb-4">Prepped meat options for quick, easy meals.</p>
+                                    <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="container-fluid event py-6">
+            <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Featured Products</small>
+                <h1 class="display-5 mb-5">Discover Our Finest Cuts and Customer Favorites</h1>
+            </div>
+            <div class="container">
+                <div class="d-flex  flex-wrap justify-content-center gap-5 my-4 wow bounceInUp row" data-wow-delay="0.1s">
+                    <button class="service-button bg-light col-md-1" onclick="showSection('beef')">beef</button>
+                    <button class="service-button bg-light col-md-1" onclick="showSection('pork')">pork</button>
+                    <button class="service-button bg-light col-md-1" onclick="showSection('goat')">goat</button>
+                </div>
+                <div class="wow bounceInUp" data-wow-delay="0.1s">
+                    <div id="beef-div" class="meat-section" style="display: block;">
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <div class="animal-content">
+                                    <div>
+                                        <p class="ac-text">
+                                            Beef
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Sausage
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Ham
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Meat balls
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Offal
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Skin
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Oxtail
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <img src="{% static 'img/cow-meat.jpg' %}" alt="" class="img-fluid animal-content-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pork-div" class="meat-section" style="display: none;">
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <div class="animal-content">
+                                    <div>
+                                        <p class="ac-text">
+                                            Pork
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Bacon
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Ribs
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Offal
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Tenderloin
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <img src="{% static 'img/pig-meat.jpg' %}" alt="" class="img-fluid animal-content-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="goat-div" class="meat-section" style="display: none;">
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <div class="animal-content">
+                                    <div>
+                                        <p class="ac-text">
+                                            Chevon
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Offal
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Skin
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                    <div>
+                                        <p class="ac-text">
+                                            Offal
+                                        </p>
+                                        <hr class="sausage-shape">
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <img src="{% static 'img/goat-meat.jpg' %}" alt="" class="img-fluid animal-content-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- Events Start -->
+        <div class="container-fluid event py-6">
+            <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">What Sets Us Apart</small>
+                <h1 class="display-5 mb-5">Driving Excellence Through Innovation</h1>
+            </div>
+            <div class="container my-5 p-4" data-wow-delay="0.1s">
+                <div class="row g-4 wow bounceInUp">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="card h-100 card-section position-relative text-white overflow-hidden" style="background: url('{% static "img/storage-card.jpeg" %}'); background-size: cover; background-position: center;">
+                        <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(120, 0, 0, 0.8); z-index: 1;"></div>
+                        <div class="card-body position-relative" style="z-index: 2;">
+                            <div class="card-header">
+                                <h5 class="card-title text-white"><i class="fas fa-robot"></i> Smart Storage</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Our storage systems are designed with cutting-edge technology that ensures the safe preservation of your products. Whether it’s perishable goods, sensitive materials, or bulky inventory, our facilities offer optimal temperature, humidity control, and security monitoring to prevent loss or damage.</p>
+                                <p>We implement smart inventory tracking to help you stay updated on stock levels and movements in real time.</p>
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+              
+                  <div class="col-lg-6 col-md-12">
+                    <div class="card h-100 card-section position-relative text-white overflow-hidden" style="background: url('{% static "img/mechanized-card.jpeg" %}'); background-size: cover; background-position: center;">
+                        <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(120, 0, 0, 0.8); z-index: 1;"></div>
+                        <div class="card-body position-relative" style="z-index: 2;">
+                            <div class="card-header">
+                                <h5 class="card-title text-white"><i class="fas fa-cogs"></i> Mechanized Operations</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>To enhance efficiency, accuracy, and safety, we’ve integrated mechanized systems into our operations. Automated handling equipment reduces manual labor, speeds up turnaround time, and lowers operational risk.</p>
+                                <p>Our systems are scalable and adaptive, enabling us to handle various product types with precision, from delicate items to industrial equipment.</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              
+                  <div class="col-lg-6 col-md-12">
+              
+                    <div class="card h-100 card-section position-relative text-white overflow-hidden" style="background: url('{% static "img/capacity-card.jpeg" %}'); background-size: cover; background-position: center;">
+                        <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(120, 0, 0, 0.8); z-index: 1;"></div>
+                        <div class="card-body position-relative" style="z-index: 2;">
+                            <div class="card-header">
+                                <h5 class="card-title text-white"><i class="fas fa-warehouse"></i> High Capacity</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>We are equipped to handle high-volume demands without compromising on quality or timelines. Our warehouses and processing units are built to scale, supporting seamless expansion as your business grows.</p>
+                                <p>With dedicated zones for different categories of goods and optimized workflows, we ensure efficient space utilization and smooth operations at all times.</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              
+                  <div class="col-lg-6 col-md-12">
+                    <div class="card h-100 card-section position-relative text-white overflow-hidden" style="background: url('{% static "img/transport-card.jpeg" %}'); background-size: cover; background-position: center;">
+                        <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(120, 0, 0, 0.8); z-index: 1;"></div>
+                        <div class="card-body position-relative" style="z-index: 2;">
+                            <div class="card-header">
+                                <h5 class="card-title text-white"><i class="fas fa-truck-moving"></i> Seamless Logistics</h5>
+                            </div>
+                            <div class="card-body text-white">
+                                <p>Our logistics solutions are tailored to get your products where they need to be — fast and securely. We work with trusted local and international delivery partners and provide end-to-end visibility into your shipments.</p>
+                                <p>With real-time tracking, custom route optimization, and proactive communication, we ensure every package is delivered on time and with care.</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+              
+        </div>
+        <!-- Events End -->
+
+
+        <!-- Menu Start -->
+        <!-- <div class="container-fluid menu py-6 my-6 position-relative" style="background: url('{% static "img/caro-1-c.jpg" %}'); background-size: cover; background-position: center;">
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(244, 0, 9, 0.5); z-index: 1;"></div>
+            <div class="container position-relative" style="z-index: 2;">
+                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Operation</small>
+                    <h1 class="display-5 mb-5">We're Open:</h1>
+                </div>
+                <div class="row wow bounceInUp" data-wow-delay="0.1s">
+                    <ul class="col-md-6 hour-list">
+                        <li>Monday  &nbsp;&nbsp;  8:00 - 17:00</li>
+                        <li>Tuesday   &nbsp;&nbsp;  8:00 - 17:00</li>
+                        <li>Wednesday   &nbsp;&nbsp; 8:00 - 17:00</li>
+                        <li>Thursday   &nbsp;&nbsp; 8:00 - 17:00</li>
+                        <li>Friday  &nbsp;&nbsp;  8:00 - 17:00</li>
+                        <li>Saturday  &nbsp;&nbsp;  8:00 - 17:00</li>
+                        <li>Sunday   &nbsp;&nbsp; CLOSED</li>
+                    </ul>
+                    <div class="col-md-6">
+
+                    </div>
+
+                </div>
+            </div>
+        </div> -->
+        <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+            <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Operation</small>
+            <h1 class="display-5">We're Open:</h1>
+        </div>
+        <div class="container-fluid menu py-6 my-6 position-relative" style="background: url('{% static "img/caro-1-c.jpg" %}'); background-size: cover; background-position: center;">
+            <!-- Background Overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(120, 0, 0, 0.8); z-index: 1;"></div>
+        
+            <!-- Foreground Content -->
+            <div class="container position-relative" style="z-index: 2;">
+                
+        
+                <div class="row wow bounceInUp" data-wow-delay="0.1s">
+                    <div class="col-md-6">
+                        <ul class="hour-list list-unstyled">
+                            <li class="mb-3">Monday &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8:00 - 17:00</li>
+                            <li class="mb-3">Tuesday &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 8:00 - 17:00</li>
+                            <li class="mb-3">Wednesday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8:00 - 17:00</li>
+                            <li class="mb-3">Thursday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;8:00 - 17:00</li>
+                            <li class="mb-3">Friday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8:00 - 17:00</li>
+                            <li class="mb-3">Saturday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8:00 - 17:00</li>
+                            <li class="mb-3">Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CLOSED</li>
+                        </ul>
+                    </div>
+        
+                    <div class="col-md-6">
+                        <!-- Add other content here -->
+                        <ul class="hour-list list-unstyled">
+                            <li class="mb-3">
+                                <i class="fa fa-phone text-white" aria-hidden="true"></i>  +234 802 451 2349
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-street-view text-white" aria-hidden="true"></i>  km. 70/72 Old Ibadan Road, Iperu Remo ikenne Ogun State.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menu End -->
+
+
+        <!-- Book Us Start -->
+        <div class="container-fluid contact py-6 wow bounceInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-1">
+                        <img src="{% static 'img/storage-card-left.jpeg' %}" class="img-fluid h-100 w-100 rounded-start" style="object-fit: cover; opacity: 0.7;" alt="">
+                    </div>
+                    <div class="col-10">
+                        <div class="border-bottom border-top border-primary bg-light py-5 px-4">
+                            <div class="text-center">
+                                <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Make Inquiry</small>
+                                <h1 class="display-5 mb-5">Make Stock Inquiry</h1>
+                            </div>
+                            <!-- <div class="row g-4 form">
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="Default select example">
+                                        <option selected>Select Country</option>
+                                        <option value="1">USA</option>
+                                        <option value="2">UK</option>
+                                        <option value="3">India</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="Default select example">
+                                        <option selected>Select City</option>
+                                        <option value="1">Depend On Country</option>
+                                        <option value="2">UK</option>
+                                        <option value="3">India</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="Default select example">
+                                        <option selected>Select Palace</option>
+                                        <option value="1">Depend On Country</option>
+                                        <option value="2">UK</option>
+                                        <option value="3">India</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="Default select example">
+                                        <option selected>Small Event</option>
+                                        <option value="1">Event Type</option>
+                                        <option value="2">Big Event</option>
+                                        <option value="3">Small Event</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="Default select example">
+                                        <option selected>No. Of Palace</option>
+                                        <option value="1">100-200</option>
+                                        <option value="2">300-400</option>
+                                        <option value="3">500-600</option>
+                                        <option value="4">700-800</option>
+                                        <option value="5">900-1000</option>
+                                        <option value="6">1000+</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="Default select example">
+                                        <option selected>Vegetarian</option>
+                                        <option value="1">Vegetarian</option>
+                                        <option value="2">Non Vegetarian</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="mobile" class="form-control border-primary p-2" placeholder="Your Contact No.">
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="date" class="form-control border-primary p-2" placeholder="Select Date">
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="email" class="form-control border-primary p-2" placeholder="Enter Your Email">
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Submit Now</button>
+                                </div>
+                            </div> -->
+                            <div class="row g-4 form">
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="text" class="form-control border-primary p-2" placeholder="Full Name" required>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="email" class="form-control border-primary p-2" placeholder="Email Address" required>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="tel" class="form-control border-primary p-2" placeholder="Phone Number">
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="text" class="form-control border-primary p-2" placeholder="Company Name (Optional)">
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" required>
+                                        <option selected disabled>Select Product of Interest</option>
+                                        <option value="cassava">Cattle</option>
+                                        <option value="maize">Pig</option>
+                                        <option value="palm_oil">Goat</option>
+                                        <!-- Add more as needed -->
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="text" class="form-control border-primary p-2" placeholder="Quantity Needed (e.g. 200 kg)">
+                                </div>
+                                <!-- <div class="col-lg-4 col-md-6">
+                                    <input type="date" class="form-control border-primary p-2" placeholder="Preferred Delivery Date">
+                                </div> -->
+                                <div class="col-12">
+                                    <textarea class="form-control border-primary p-2" rows="4" placeholder="Additional Notes or Questions"></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Check Availability</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <img src="{% static 'img/storage-card-right.jpeg' %}" class="img-fluid h-100 w-100 rounded-end" style="object-fit: cover; opacity: 0.7;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Book Us End -->
+
+        
+        <!-- Team Start -->
+        <!-- <div class="container-fluid team py-6">
+            <div class="container">
+                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Team</small>
+                    <h1 class="display-5 mb-5">We have experienced chef Team</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="team-item rounded">
+                            <img class="img-fluid rounded-top " src="{% static 'img/team-1.jpg' %}" alt="">
+                            <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                                <h4 class="text-primary">Henry</h4>
+                                <p class="text-white mb-0">Decoration Chef</p>
+                            </div>
+                            <div class="team-icon d-flex flex-column justify-content-center m-4">
+                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fas fa-share-alt"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.3s">
+                        <div class="team-item rounded">
+                            <img class="img-fluid rounded-top " src="{% static 'img/team-2.jpg' %}" alt="">
+                            <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                                <h4 class="text-primary">Jemes Born</h4>
+                                <p class="text-white mb-0">Executive Chef</p>
+                            </div>
+                            <div class="team-icon d-flex flex-column justify-content-center m-4">
+                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fas fa-share-alt"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.5s">
+                        <div class="team-item rounded">
+                            <img class="img-fluid rounded-top " src="{% static 'img/team-3.jpg' %}" alt="">
+                            <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                                <h4 class="text-primary">Martin Hill</h4>
+                                <p class="text-white mb-0">Kitchen Porter</p>
+                            </div>
+                            <div class="team-icon d-flex flex-column justify-content-center m-4">
+                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fas fa-share-alt"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.7s">
+                        <div class="team-item rounded">
+                            <img class="img-fluid rounded-top " src="{% static 'img/team-4.jpg' %}" alt="">
+                            <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                                <h4 class="text-primary">Adam Smith</h4>
+                                <p class="text-white mb-0">Head Chef</p>
+                            </div>
+                            <div class="team-icon d-flex flex-column justify-content-center m-4">
+                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fas fa-share-alt"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Team End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid py-6">
+            <div class="container">
+                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Testimonial</small>
+                    <h1 class="display-5 mb-5">What Our Customers says!</h1>
+                </div>
+                <div class="owl-carousel owl-theme testimonial-carousel testimonial-carousel-1 mb-4 wow bounceInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item rounded bg-light">
+                        <div class="d-flex mb-3">
+                            <img src="{% static 'img/testimonial-1.jpg' %}" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <div class="position-absolute" style="top: 15px; right: 20px;">
+                                <i class="fa fa-quote-right fa-2x"></i>
+                            </div>
+                            <div class="ps-3 my-auto">
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="m-0">Profession</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="d-flex">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="fs-5 m-0 pt-3">Their plant delivers consistent quality. We’ve cut processing time by over 30% since partnering with them.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item rounded bg-light">
+                        <div class="d-flex mb-3">
+                            <img src="{% static 'img/testimonial-2.jpg' %}" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <div class="position-absolute" style="top: 15px; right: 20px;">
+                                <i class="fa fa-quote-right fa-2x"></i>
+                            </div>
+                            <div class="ps-3 my-auto">
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="m-0">Profession</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="d-flex">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="fs-5 m-0 pt-3">Efficient, reliable, and clean. Our fresh produce is always handled with care and processed on time.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item rounded bg-light">
+                        <div class="d-flex mb-3">
+                            <img src="{% static 'img/testimonial-3.jpg' %}" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <div class="position-absolute" style="top: 15px; right: 20px;">
+                                <i class="fa fa-quote-right fa-2x"></i>
+                            </div>
+                            <div class="ps-3 my-auto">
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="m-0">Profession</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="d-flex">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="fs-5 m-0 pt-3">They helped us meet international packaging standards. We now export confidently thanks to their facility.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item rounded bg-light">
+                        <div class="d-flex mb-3">
+                            <img src="{% static 'img/testimonial-4.jpg' %}" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <div class="position-absolute" style="top: 15px; right: 20px;">
+                                <i class="fa fa-quote-right fa-2x"></i>
+                            </div>
+                            <div class="ps-3 my-auto">
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="m-0">Profession</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="d-flex">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="fs-5 m-0 pt-3">The team is professional and respectful. I get fair pricing and excellent service every time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel testimonial-carousel testimonial-carousel-2 wow bounceInUp" data-wow-delay="0.3s">
+                    <div class="testimonial-item rounded bg-light">
+                        <div class="d-flex mb-3">
+                            <img src="{% static 'img/testimonial-1.jpg' %}" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <div class="position-absolute" style="top: 15px; right: 20px;">
+                                <i class="fa fa-quote-right fa-2x"></i>
+                            </div>
+                            <div class="ps-3 my-auto">
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="m-0">Profession</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="d-flex">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="fs-5 m-0 pt-3">We've worked with many processors, but the efficiency and consistency here are unmatched. Our clients always notice the difference.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item rounded bg-light">
+                        <div class="d-flex mb-3">
+                            <img src="{% static 'img/testimonial-2.jpg' %}" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <div class="position-absolute" style="top: 15px; right: 20px;">
+                                <i class="fa fa-quote-right fa-2x"></i>
+                            </div>
+                            <div class="ps-3 my-auto">
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="m-0">Profession</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="d-flex">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="fs-5 m-0 pt-3">Turnaround time is always fast, and product quality consistently meets international standards. Highly recommend!</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item rounded bg-light">
+                        <div class="d-flex mb-3">
+                            <img src="{% static 'img/testimonial-3.jpg' %}" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <div class="position-absolute" style="top: 15px; right: 20px;">
+                                <i class="fa fa-quote-right fa-2x"></i>
+                            </div>
+                            <div class="ps-3 my-auto">
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="m-0">Profession</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="d-flex">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="fs-5 m-0 pt-3">Thanks to this plant, my produce stays fresh longer and fetches better prices at the market. It’s been a game changer for my farm.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item rounded bg-light">
+                        <div class="d-flex mb-3">
+                            <img src="{% static 'img/testimonial-4.jpg' %}" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <div class="position-absolute" style="top: 15px; right: 20px;">
+                                <i class="fa fa-quote-right fa-2x"></i>
+                            </div>
+                            <div class="ps-3 my-auto">
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="m-0">Profession</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="d-flex">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="fs-5 m-0 pt-3">Reliable, clean, and well-organized facility. Our partnership has streamlined logistics and cut down processing delays.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Blog Start -->
+        <!-- <div class="container-fluid blog py-6">
+            <div class="container">
+                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Blog</small>
+                    <h1 class="display-5 mb-5">Be First Who Read News</h1>
+                </div>
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="blog-item">
+                            <div class="overflow-hidden rounded">
+                                <img src="{% static 'img/blog-1.jpg' %}" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="blog-content mx-4 d-flex rounded bg-light">
+                                <div class="text-dark bg-primary rounded-start">
+                                    <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
+                                        <p class="fw-bold mb-0">16</p>
+                                        <p class="fw-bold mb-0">Sep</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="h5 lh-base my-auto h-100 p-3">How to get more test in your food from</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.3s">
+                        <div class="blog-item">
+                            <div class="overflow-hidden rounded">
+                                <img src="{% static 'img/blog-2.jpg' %}" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="blog-content mx-4 d-flex rounded bg-light">
+                                <div class="text-dark bg-primary rounded-start">
+                                    <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
+                                        <p class="fw-bold mb-0">16</p>
+                                        <p class="fw-bold mb-0">Sep</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="h5 lh-base my-auto h-100 p-3">How to get more test in your food from</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.5s">
+                        <div class="blog-item">
+                            <div class="overflow-hidden rounded">
+                                <img src="{% static 'img/blog-3.jpg' %}" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="blog-content mx-4 d-flex rounded bg-light">
+                                <div class="text-dark bg-primary rounded-start">
+                                    <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
+                                        <p class="fw-bold mb-0">16</p>
+                                        <p class="fw-bold mb-0">Sep</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="h5 lh-base my-auto h-100 p-3">How to get more test in your food from</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Blog End -->
+
+
+{% block script %}
+<script>
+    function showSection(meat) {
+        document.querySelectorAll('.meat-section').forEach(section => {
+            section.style.display = 'none';
+        });
+
+        const selectedDiv = document.getElementById(`${meat}-div`);
+        if (selectedDiv) {
+            selectedDiv.style.display = 'block';
+        }
+    }
+    // function showSection(meat) {
+    //     document.querySelectorAll('.meat-section').forEach(section => {
+    //         section.classList.remove('active');
+    //     });
+
+    //     const selectedDiv = document.getElementById(`${meat}-div`);
+    //     if (selectedDiv) {
+    //         selectedDiv.classList.add('active');
+    //     }
+    // }
+    const images = [
+        "{% static 'img/caro-1-c.jpg' %}",
+        "{% static 'img/caro-2.jpg' %}",
+        "{% static 'img/caro-3.jpeg' %}"
+    ];
+
+    const slides = [
+        {
+            image: "{% static 'img/caro-1-c.jpg' %}",
+            text: "Content 1"
+        },
+        {
+            image: "{% static 'img/caro-2.jpg' %}",
+            text: "Content 2"
+        },
+        {
+            image: "{% static 'img/caro-3.jpeg' %}",
+            text: "Content 3"
+        }
+    ];
+
+    let currentSlideIndex = 0;
+    const slider = document.getElementById('slider');
+    const sliderContent = document.getElementById('slider-content');
+
+    function updateSlider() {
+        slider.style.backgroundImage = `url('${slides[currentSlideIndex].image}')`;
+        sliderContent.textContent = slides[currentSlideIndex].text;
+        currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+    }
+
+    updateSlider(); // Show first slide
+    setInterval(updateSlider, 5000); // Change every 5 seconds
+</script>
+{% endblock %}
+
+{% endblock %}
