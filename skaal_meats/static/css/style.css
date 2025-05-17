@@ -579,6 +579,16 @@ h4, h5, h6, .h4, .h5, .h6 {
 	z-index: 2;
 }
 
+.card-section {
+	/* border: 1px solid red; */
+}
+
+.hour-list {
+	list-style: none;
+	color: #fff;
+	font-size: 1.5em;
+}
+
 /* @keyframes slideImages {
 	0% {
 		background: url('{% static "img/caro-1.jpg" %}');
