@@ -12,3 +12,7 @@ def about_us_view(request):
 
 def contact_us_view(request):
   return render(request, "contact.html")
+
+
+def shop_view(request):
+  return render(request, "shop.html")

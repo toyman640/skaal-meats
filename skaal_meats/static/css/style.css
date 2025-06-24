@@ -320,7 +320,8 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 
 .test-div {
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    border: 1px solid #f50000;
     height: 500px;
 }
 
@@ -506,7 +507,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 
 .service-button {
-	border: 1px solid red;
+	border: 1px solid #f50000;
 	height: 50px;
 	border-bottom-left-radius: 50px;
 	border-top-right-radius: 50px;
@@ -516,7 +517,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .service-button:hover {
 	background-color: black !important;
-	color: red;
+	color: #f50000;
 	border: 1px solid black;
 }
 
@@ -525,7 +526,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 
 .sausage-shape {
-	border: 3px dashed #e60000 !important;
+	border: 3px dashed #f50000 !important;
 	background-color: inherit;
 	height: 10px;
 }
@@ -605,4 +606,104 @@ h4, h5, h6, .h4, .h5, .h6 {
 } */
 
 
+/* meat div */
+.box {
+    --r: 30px; /* control the rounded part*/
+    --s: 80px; /* control the size of the cut and the image  */
+    --a: 20deg; /* control the depth of the curvature */
+    
+    width: 80%;
+    min-height: 600px;
+    margin-left: 10%;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    transition: .4s --a;
+    color: #fff;
+    font-family: system-ui,sans-serif;
+    text-align: center;
+    margin-top: 150px !important;
+}
+.box:hover {
+    --a: 35deg;
+}
+.box img {
+    height: calc(2*var(--s));
+    aspect-ratio: 1;
+    scale: .9;
+    translate: 0 calc(-1*sin(var(--a))*var(--s) - sin(var(--a))*var(--r));
+    border-radius: 50%;
+    background: #000;
+    /* border-radius: 5px solid #ffadad; */
+}
+.box:before {
+   
+    border-radius: 50px;
+    border: 5px solid #f50000;
+    content:"";
+    position: absolute;
+    z-index: -1;
+    inset: calc(var(--s)/2 + var(--r)/4) 0 0 0;
+    background: #ffadad;
+    --_m:0/calc(2*var(--r)) calc(2*var(--r)) no-repeat
+    radial-gradient(50% 50%,#000 calc(100% - 1px),#0000);
+    --_d:(var(--s) + var(--r))*cos(var(--a));
+    mask:
+    calc(50% + var(--_d)) var(--_m),calc(50% - var(--_d)) var(--_m),
+    radial-gradient(var(--s) at 50% calc(-1*sin(var(--a))*var(--s)),
+        #0000 100%,#000 calc(100% + 1px)) 0 calc(var(--r)*(1 - sin(var(--a)))) no-repeat,
+    linear-gradient(90deg,#000 calc(50% - var(--_d)),#0000 0 calc(50% + var(--_d)),#000 0);
+}
+
+
+
+
+
+h2 {
+    margin-block: calc(var(--s)/-3) 0;
+    font-size: 3rem
+}
+p {
+    font-size: 1rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+.price-div {
+  width: 80%;
+  margin-left: 10%;
+
+}
+
+.price-div table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 50px;
+}
+
+.price-div td.start {
+  text-align: left;
+}
+
+.price-div td.end {
+  text-align: right;
+}
+
+#myDiv::-webkit-scrollbar {
+  width: 8px;
+}
+
+#myDiv::-webkit-scrollbar-track {
+  background: inherit;
+  border-radius: 4px;
+}
+
+#myDiv::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.3);
+  border-radius: 4px;
+}
+
+#myDiv::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;
+}
 

@@ -1,0 +1,188 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+{% block title %} Shop{% endblock %} 
+
+{% block content %}
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid py-6 my-6 mt-0" style="background-image: url('{% static 'img/meat-market.jpg' %}'); background-position: center; background-attachment: fixed; background-size: cover; position: relative;">
+        <div style="background-color: rgba(155, 93, 93, 0.6); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;""></div>
+        <div class="container text-center animated bounceInDown" style="position: relative; z-index: 2;">
+            <h1 class="display-1 mb-4">Shop</h1>
+            <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
+                <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+                <li class="breadcrumb-item text-dark" aria-current="page">Shop</li>
+            </ol>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+ 
+     
+    <!-- Shop -->
+    <div class="container-fluid py-6 my-6" >
+        <div class="container">
+            <div class="text-center">
+                <h2 >Price List</h2>
+            </div>
+            <div class="row align-items-center">
+            
+                <div class="box mt-5 col-lg-7 meat-div bounceInUp" data-wow-delay="0.3s">
+                    <img src="{% static 'img/cow-icon.png' %}" alt="a random avatar">
+                    <h2>Beef</h2>
+                    <button class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Price List/KG</button>
+                    <div class="price-div">
+                        <table>
+                            <tbody>
+                                <tr style="font-family: 'WDXL Lubrifont SC', sans-serif; color: #000; font-weight: 600; font-size: 3em;">
+                                    <td class="start">Beef</td>
+                                    <td class="end">50</td>
+                                </tr>
+                                <tr style="font-family: 'WDXL Lubrifont SC', sans-serif; color: #000; font-weight: 600; font-size: 3em;">
+                                    <td class="start">Offal</td>
+                                    <td class="end">50</td>
+                                </tr>
+                                <tr style="font-family: 'WDXL Lubrifont SC', sans-serif; color: #000; font-weight: 600; font-size: 3em;">
+                                    <td class="start">Skin</td>
+                                    <td class="end">50</td>
+                                </tr>
+                            <!-- You can add more rows like this -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="box mt-5   col-lg-7 meat-div bounceInUp" data-wow-delay="0.3s">
+                    <img src="{% static 'img/pork-icon-b.png' %}" alt="a random avatar">
+                    <h2>Pork</h2>
+                    <button class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Price List</button>
+                    <div class="price-div">
+                        <table>
+                            <tbody>
+                                <tr style="font-family: 'WDXL Lubrifont SC', sans-serif; color: #000; font-weight: 600; font-size: 3em;">
+                                    <td class="start">Beef</td>
+                                    <td class="end">50</td>
+                                </tr>
+                                <tr style="font-family: 'WDXL Lubrifont SC', sans-serif; color: #000; font-weight: 600; font-size: 3em;">
+                                    <td class="start">Offal</td>
+                                    <td class="end">50</td>
+                                </tr>
+                                <tr style="font-family: 'WDXL Lubrifont SC', sans-serif; color: #000; font-weight: 600; font-size: 3em;">
+                                    <td class="start">Skin</td>
+                                    <td class="end">50</td>
+                                </tr>
+                            <!-- You can add more rows like this -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div  class="box mt-5 col-lg-7 meat-div bounceInUp" data-wow-delay="0.3s" >
+                    <img src="{% static 'img/chicken-icon.png' %}" alt="a random avatar">
+                    <h2>Chicken</h2>
+                    <button class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Price List</button>
+                    <div id="myDiv" class="price-div" style="max-height: 422px; overflow-y: auto;">
+                        <table >
+                            <tbody >
+                                <tr style="font-family: 'WDXL Lubrifont SC', sans-serif; color: #000; font-weight: 600; font-size: 3em;">
+                                    <td class="start">Beef</td>
+                                    <td class="end">5000</td>
+                                </tr>
+                                <tr style="font-family: 'WDXL Lubrifont SC', sans-serif; color: #000; font-weight: 600; font-size: 3em;">
+                                    <td class="start">Offal</td>
+                                    <td class="end">50</td>
+                                </tr>
+                                <tr style="font-family: 'WDXL Lubrifont SC', sans-serif; color: #000; font-weight: 600; font-size: 3em;">
+                                    <td class="start">Skin</td>
+                                    <td class="end">50</td>
+                                </tr>
+                                <!-- <tr style="font-family: 'WDXL Lubrifont SC', sans-serif; color: #000; font-weight: 600; font-size: 3em;">
+                                    <td class="start">Beef</td>
+                                    <td class="end">5000</td>
+                                </tr>
+                                <tr style="font-family: 'WDXL Lubrifont SC', sans-serif; color: #000; font-weight: 600; font-size: 3em;">
+                                    <td class="start">Offal</td>
+                                    <td class="end">50</td>
+                                </tr>
+                                <tr style="font-family: 'WDXL Lubrifont SC', sans-serif; color: #000; font-weight: 600; font-size: 3em;">
+                                    <td class="start">Skin</td>
+                                    <td class="end">50</td>
+                                </tr> -->
+                                
+                                
+                            <!-- You can add more rows like this -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+    <!-- endshop -->
+    
+    <!-- Book Us Start -->
+    <div class="container-fluid contact py-6 wow bounceInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-1">
+                    <img src="{% static 'img/book-left.jpg' %}" class="img-fluid h-100 w-100 rounded-start" style="object-fit: cover; opacity: 0.7;" alt="">
+                </div>
+                <div class="col-10">
+                    <div class="border-bottom border-top border-primary bg-light py-5 px-4">
+                        <div class="text-center">
+                            <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Bookings</small>
+                            <h1 class="display-5 mb-5">Place Bookings</h1>
+                        </div>
+                       
+                        <div class="row g-4 form">
+                            <div class="col-lg-4 col-md-6">
+                                <input type="text" class="form-control border-primary p-2" placeholder="Full Name" required>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <input type="email" class="form-control border-primary p-2" placeholder="Email Address" required>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <input type="tel" class="form-control border-primary p-2" placeholder="Phone Number">
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <input type="text" class="form-control border-primary p-2" placeholder="Company Name (Optional)">
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <select class="form-select border-primary p-2" required>
+                                    <option selected disabled>Select Product of Interest</option>
+                                    <option value="cassava">Cattle</option>
+                                    <option value="maize">Pig</option>
+                                    <option value="palm_oil">Goat</option>
+                                    <!-- Add more as needed -->
+                                </select>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <input type="number" min="0" step="1" class="form-control border-primary p-2" placeholder="Quantity/KG (e.g. 200)">
+                            </div>
+                            <!-- <div class="col-lg-4 col-md-6">
+                                <input type="date" class="form-control border-primary p-2" placeholder="Preferred Delivery Date">
+                            </div> -->
+                            <div class="col-12">
+                                <textarea class="form-control border-primary p-2" rows="4" placeholder="Message..."></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Place Booking</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-1">
+                    <img src="{% static 'img/book-right.jpg' %}" class="img-fluid h-100 w-100 rounded-end" style="object-fit: cover; opacity: 0.7;" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Book Us End -->
+   
+
+       
+{% endblock %}
