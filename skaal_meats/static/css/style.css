@@ -321,7 +321,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .test-div {
     /* border: 1px solid red; */
-    border: 1px solid #f50000;
+    border: 1px solid #da292a;
     height: 500px;
 }
 
@@ -507,7 +507,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 
 .service-button {
-	border: 1px solid #f50000;
+	border: 1px solid #da292a;
 	height: 50px;
 	border-bottom-left-radius: 50px;
 	border-top-right-radius: 50px;
@@ -517,7 +517,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .service-button:hover {
 	background-color: black !important;
-	color: #f50000;
+	color: #da292a;
 	border: 1px solid black;
 }
 
@@ -526,7 +526,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 
 .sausage-shape {
-	border: 3px dashed #f50000 !important;
+	border: 3px dashed #da292a !important;
 	background-color: inherit;
 	height: 10px;
 }
@@ -639,7 +639,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 .box:before {
    
     border-radius: 50px;
-    border: 5px solid #f50000;
+    border: 5px solid #da292a;
     content:"";
     position: absolute;
     z-index: -1;
