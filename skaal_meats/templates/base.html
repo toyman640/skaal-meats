@@ -8,11 +8,17 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
+        <link rel="icon" type="image/x-icon" href="{% static 'img/skaal-log-c.png' %}">
 
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap" rel="stylesheet">
+        <link href="{% static 'font/EraserDust.ttf' %}" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/chalkboard" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=WDXL+Lubrifont+SC&display=swap" rel="stylesheet">
 
         <!-- Icon Font Stylesheet -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
@@ -43,21 +49,21 @@
         <div class="container-fluid nav-bar">
             <div class="container">
                 <nav class="navbar navbar-light navbar-expand-lg py-4">
-                    <a href="index.html" class="navbar-brand">
+                    <a href="{% url 'index' %}" class="navbar-brand">
                         <!-- <h1 class="text-primary fw-bold mb-0">Cater<span class="text-dark">Serv1</span> </h1> -->
-                        <img class="logo" src="{% static 'img/skaal-crop-nobg-c.png' %}" alt="">
+                        <img class="logo" src="{% static 'img/skaal-logo-svg.svg' %}" alt="" style="mix-blend-mode: multiply; height: 280px; position: absolute; margin-top: -110px;">
                     </a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
                     <div class="collapse navbar-collapse check-border" id="navbarCollapse">
                         <div class="navbar-nav ms-auto">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="service.html" class="nav-item nav-link">Services</a>
-                            <a href="event.html" class="nav-item nav-link">Events</a>
-                            <a href="menu.html" class="nav-item nav-link">Menu</a>
-                            <div class="nav-item dropdown">
+                            <a href="{% url 'index' %}" class="nav-item nav-link  {% if request.path == '/' %}active{% endif %}">Home</a>
+                            <a href="{% url 'frontend:about_us_view' %}" class="nav-item nav-link {% if request.path == '/pages/about-us/' %}active{% endif %}">About</a>
+                            <!-- <a href="service.html" class="nav-item nav-link">Services</a> -->
+                            <a href="{% url 'frontend:shop_view' %}" class="nav-item nav-link {% if request.path == '/pages/pricing/' %}active{% endif %}">Shop</a>
+                            <!-- <a href="menu.html" class="nav-item nav-link">Menu</a> -->
+                            <!-- <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu bg-light">
                                     <a href="book.html" class="dropdown-item">Booking</a>
@@ -66,8 +72,8 @@
                                     <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                                     <a href="404.html" class="dropdown-item">404 Page</a>
                                 </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            </div> -->
+                            <a href="{% url 'frontend:contact_us_view' %}" class="nav-item nav-link {% if request.path == '/pages/contact-us/' %}active{% endif %}">Contact</a>
                         </div>
                         
                     </div>
@@ -100,6 +106,42 @@
 
         {% endblock %}
 
+        <div class="container-fluid  py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s" style="background-color: #fff !important;">
+            <div class="container">
+                <h2 class="text-center mb-5">Our Top Customers</h2>
+                <!-- <div class="row text-center mt-5">
+                    <div class="col-6 col-md-3 mb-4">
+                        <img class="img-fluid" src="{% static 'img/spar.svg' %}" alt="" style="mix-blend-mode: multiply;">
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <img class="img-fluid" src="{% static 'img/shoprite.svg' %}" alt="" style="mix-blend-mode: multiply;">
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <img class="img-fluid" src="{% static 'img/oriental.png' %}" alt="" style="mix-blend-mode: multiply;">
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <img class="img-fluid" src="{% static 'img/parkinn.webp' %}" alt="" style="mix-blend-mode: multiply;">
+                    </div>
+                </div> -->
+                <div class="row text-center mt-5 align-items-center">
+                    <div class="col-6 col-md-3 mb-4 d-flex justify-content-center align-items-center wow bounceInDown" data-wow-delay="0.2s" style="height: 150px;">
+                        <img class="img-fluid" src="{% static 'img/spar.svg' %}" alt="" style="mix-blend-mode: multiply; max-height: 100px;">
+                    </div>
+                    <div class="col-6 col-md-3 mb-4 d-flex justify-content-center align-items-center wow bounceInUp" data-wow-delay="0.3s" style="height: 120px;">
+                        <img class="img-fluid" src="{% static 'img/shoprite.svg' %}" alt="" style="mix-blend-mode: multiply; max-height: 100px;">
+                    </div>
+                    <div class="col-6 col-md-3 mb-4 d-flex justify-content-center align-items-center wow bounceInDown" data-wow-delay="0.2s" style="height: 120px;">
+                        <img class="img-fluid" src="{% static 'img/oriental.png' %}" alt="" style="mix-blend-mode: multiply; max-height: 100px;">
+                    </div>
+                    <div class="col-6 col-md-3 mb-4 d-flex justify-content-center align-items-center wow wow bounceInUp" data-wow-delay="0.3s" style="height: 120px;">
+                        <img class="img-fluid" src="{% static 'img/parkinn.webp' %}" alt="" style="mix-blend-mode: multiply; max-height: 100px;">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
         <!-- Footer Start -->
         <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
           <div class="container">
@@ -107,7 +149,8 @@
                   <div class="col-lg-3 col-md-6">
                       <div class="footer-item">
                           <h1 class="text-primary">Skaal<span class="text-dark">Meats</span></h1>
-                          <p class="lh-lg mb-4">There cursus massa at urnaaculis estieSed aliquamellus vitae ultrs condmentum leo massamollis its estiegittis miristum.</p>
+                          <p class="lh-lg mb-4">At Skaal Meats, quality and freshness guaranteed in every cut for you.</p>
+                          <!-- <p class="lh-lg mb-4">At Skaal Meats, our modern facility ensures reliable processing, guaranteeing quality and freshness in every cut for you.</p> -->
                           <div class="footer-icon d-flex">
                               <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
                               <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-twitter"></i></a>
@@ -118,12 +161,12 @@
                   </div>
                   <div class="col-lg-3 col-md-6">
                       <div class="footer-item">
-                          <h4 class="mb-4">Special Facilities</h4>
+                          <h4 class="mb-4">Want to</h4>
                           <div class="d-flex flex-column align-items-start">
-                              <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Cheese Burger</a>
-                              <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Sandwich</a>
-                              <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Panner Burger</a>
-                              <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Special Sweets</a>
+                              <a class="text-body mb-3" href="{% url 'frontend:shop_view' %}#fresh-meat"><i class="fa fa-check text-primary me-2"></i>Make Bookings</a>
+                              <a class="text-body mb-3" href="{% url 'frontend:about_us_view' %}#reachout"><i class="fa fa-check text-primary me-2"></i>Make inquiry</a>
+                              <a class="text-body mb-3" href="{% url 'frontend:shop_view' %}#price-list"><i class="fa fa-check text-primary me-2"></i>Prices</a>
+                              <!-- <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Special Sweets</a> -->
                           </div>
                       </div>
                   </div>
@@ -131,36 +174,22 @@
                       <div class="footer-item">
                           <h4 class="mb-4">Contact Us</h4>
                           <div class="d-flex flex-column align-items-start">
-                              <p><i class="fa fa-map-marker-alt text-primary me-2"></i> KM 70/72 Old Ibadan Road Iperu, Ogun State, Nigeria</p>
-                              <p><i class="fa fa-phone-alt text-primary me-2"></i> (+234) 802 0927 577</p>
-                              <p><i class="fas fa-envelope text-primary me-2"></i> info@skaalmeats.com</p>
-                              <!-- <p><i class="fa fa-clock text-primary me-2"></i> 26/7 Hours Service</p> -->
+                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i> KM 70/72 Old Ibadan Road Iperu, Ogun State, Nigeria</p>
+                            <p><i class="fa fa-phone-alt text-primary me-2"></i> (+234) 802 0927 577</p>
+                            <p><i class="fas fa-envelope text-primary me-2"></i> info@skaalmeats.com</p>
+                            <!-- <p><i class="fa fa-clock text-primary me-2"></i> 26/7 Hours Service</p> -->
                           </div>
                       </div>
                   </div>
                   <div class="col-lg-3 col-md-6">
                       <div class="footer-item">
-                          <h4 class="mb-4">Social Gallery</h4>
-                          <div class="row g-2">
-                              <div class="col-4">
-                                   <img src="{% static 'img/menu-01.jpg' %}" class="img-fluid rounded-circle border border-primary p-2" alt="">
-                              </div>
-                              <div class="col-4">
-                                   <img src="{% static 'img/menu-02.jpg' %}" class="img-fluid rounded-circle border border-primary p-2" alt="">
-                              </div>
-                              <div class="col-4">
-                                   <img src="{% static 'img/menu-03.jpg' %}" class="img-fluid rounded-circle border border-primary p-2" alt="">
-                              </div>
-                              <div class="col-4">
-                                   <img src="{% static 'img/menu-04.jpg' %}" class="img-fluid rounded-circle border border-primary p-2" alt="">
-                              </div>
-                              <div class="col-4">
-                                   <img src="{% static 'img/menu-05.jpg' %}" class="img-fluid rounded-circle border border-primary p-2" alt="">
-                              </div>
-                              <div class="col-4">
-                                   <img src="{% static 'img/menu-06.jpg' %}" class="img-fluid rounded-circle border border-primary p-2" alt="">
-                              </div>
-                          </div>
+                            <h4 class="mb-4">Distribution Channels</h4>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-store text-primary me-2 mb-3"></i> Retail Supermarkets</li>
+                                <li><i class="fa fa-truck text-primary me-2 mb-3"></i> Food Service Providers</li>
+                                <li><i class="fa fa-utensils text-primary me-2 mb-3"></i> Restaurants & Hotels</li>
+                                <li><i class="fa fa-users text-primary me-2"></i> Individual Bulk Buyers</li>
+                            </ul>
                       </div>
                   </div>
               </div>

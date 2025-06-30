@@ -16,12 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from frontend.views import index_view
+from django.urls import path, include
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path("", index_view, name='index'),
+    path('pages/', include('frontend.urls')),
     path('admin/', admin.site.urls),
 ]
 

@@ -109,3 +109,5 @@
 
 })(jQuery);
 
+var clientHeight = document.getElementById('myDiv').clientHeight;
+console.log(clientHeight);
