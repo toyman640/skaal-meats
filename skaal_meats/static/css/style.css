@@ -707,3 +707,12 @@ p {
   background: #0056b3;
 }
 
+
+@media (max-width: 768px) {
+    .logo {
+        height: 150px !important; /* Smaller height for mobile screens */
+        /* You might need to adjust margin-top as well if the logo height changes significantly */
+        margin-top: -80px !important; /* Example adjustment */
+        mix-blend-mode: normal;
+    }
+}
