@@ -30,7 +30,7 @@ SECRET_KEY = '2oc^=p0bu)21ealnm&06@@u6biy)2uduc7i(c%r$2r*5&$q+8i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://skaal-meats.onrender.com']
+ALLOWED_HOSTS = ['skaal-meats.onrender.com']
 
 
 # Application definition
