@@ -1,5 +1,5 @@
-asgiref @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_cchykh5sgr/croots/recipe/asgiref_1661287542702/work
+asgiref==3.2.10
 Django==3.0.3
 psycopg2-binary==2.9.10
-pytz @ file:///C:/b/abs_6ap4tsz1ox/croot/pytz_1713974360290/work
-sqlparse @ file:///C:/b/abs_88361ub_qu/croot/sqlparse_1690904577514/work
+pytz==2024.1
+sqlparse==0.3.1
