@@ -6,21 +6,71 @@
 
 {% block content %}
         <!-- Hero Start -->
-        <div class="container-fluid bg-light py-6 my-6 mt-0">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-7 col-md-12">
-                        <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">Welcome to Skaal Meats</small>
-                        <h1 class="display-1 mb-4 animated bounceInDown">Premium <span class="text-primary">Meat Processing</span>You Can Trust</h1>
-                        <a href="" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Book Now</a>
-                        <!-- <a href="" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft">Know More</a> -->
-                    </div>
-                    <div class="col-lg-5 col-md-12">
-                        <img src="{% static 'img/combined-beef-t.png' %}" class="img-fluid rounded animated zoomIn" alt=""> 
-                    </div>
+ 
+       <!-- <div class="container-fluid   mt-0" style="padding: 0 !important;">
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="{% static 'img/banner-sausage.jpg' %}" alt=""></div>
+                <div class="item"><img src="{% static 'img/mechanized-card.jpeg' %}" alt=""></div>
+                <div class="item"><img src="{% static 'img/banner-sausage.jpg' %}" alt=""></div>
+            </div>
+        </div> -->
+        <!-- the new trial -->
+        <!-- <div class="hero-carousel position-relative" style="z-index: 1;">
+            <div class="carousel-overlay"></div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="{% static 'img/banner-sausage.jpg' %}" class="w-100 hero-img" alt="">
+                </div>
+                <div class="item">
+                    <img src="{% static 'img/mechanized-card.jpeg' %}" class="w-100 hero-img" alt="">
+                </div>
+                <div class="item">
+                    <img src="{% static 'img/banner-sausage.jpg' %}" class="w-100 hero-img" alt="">
+                </div>
+            </div>
+        </div> -->
+
+        <div class="hero-carousel position-relative" style="z-index: 1;">
+            <div class="owl-carousel owl-theme">
+                <div class="item position-relative">
+                <img src="{% static 'img/banner-sausage.jpg' %}" class="w-100 hero-img" alt="">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-caption">
+                    <h1>SKAAL MEATS</h1>
+                    <h1 class="second-banner-header">Premium & <span class="highlight">Hygienic Processing</span></h1>
+                    <p>
+                        Setting the gold standard in meat production — <span class="highlight">clean</span>, <span class="highlight">safe</span>, and traceable from farm to table.
+                    </p>
+                    <a href="" class="btn btn-primary py-3 px-5 rounded-pill mt-5">Explore Our Products</a>
+                </div>
+                </div>
+
+                <div class="item position-relative">
+                <img src="{% static 'img/mechanized-card.jpeg' %}" class="w-100 hero-img" alt="">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-caption">
+                    <h1>SKAAL MEATS</h1>
+                    <h1 class="second-banner-header"><span class="highlight">Quality Cuts</span>. Trusted Taste.</h1>
+                    <p>Expertly processed meats that meet <span class="highlight">global hygiene</span> benchmarks and local flavor expectations.</p>
+                    <a href="" class="btn btn-primary py-3 px-5 rounded-pill mt-5">Get in Touch</a>
+                </div>
+                </div>
+
+                <div class="item position-relative">
+                <img src="{% static 'img/banner-sausage.jpg' %}" class="w-100 hero-img" alt="">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-caption">
+                    <h1>SKAAL MEATS</h1>
+                    <h1 class="second-banner-header">From Livestock to Legacy</h1>
+                    <p>Every cut reflects our commitment to <span class="highlight">integrity</span>, <span class="highlight">sustainability</span>, and customer satisfaction..</p>
+                    <a href="" class="btn btn-primary py-3 px-5 rounded-pill mt-5">Learn More</a>
+                </div>
                 </div>
             </div>
         </div>
+
+
+
         <!-- Hero End -->
 
 

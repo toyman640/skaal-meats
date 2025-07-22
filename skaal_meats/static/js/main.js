@@ -106,8 +106,24 @@
             }
         }
     });
-
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        smartSpeed: 1000,
+        animateOut: 'fadeOut'
+    });
 })(jQuery);
 
 var clientHeight = document.getElementById('myDiv').clientHeight;
 console.log(clientHeight);
+
+// $(document).ready(function(){
+//     $(".owl-carousel").owlCarousel({
+//       loop: true,
+//       margin: 10,
+//       nav: true,
+//       items: 1
+//     });
+// });

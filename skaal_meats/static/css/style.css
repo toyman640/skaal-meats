@@ -24,7 +24,7 @@
 
 h1, h2, h3, .h1, .h2, .h3 {
     font-weight: 400 !important;
-    font-family: 'Playball', cursive !important;
+    /* font-family: 'Playball', cursive !important; */
 }
 
 h4, h5, h6, .h4, .h5, .h6 {
@@ -716,3 +716,173 @@ p {
         mix-blend-mode: normal;
     }
 }
+
+.owl-carousel .item img {
+  width: 100%;
+  transform: scale(0.95);
+  transition: transform 2s ease;
+}
+
+.owl-carousel .owl-item.active .item img {
+  transform: scale(1.05); /* zoom in gradually */
+}
+
+
+/* cdfrfrrfrgrgrg */
+/* .hero-carousel {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-carousel .owl-carousel .item {
+    height: 100vh;
+}
+
+.hero-carousel .hero-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+} */
+
+.hero-carousel {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-carousel .item {
+  height: 100vh;
+}
+
+.hero-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 3;
+  /* text-align: center; */
+  padding: 20px;
+  /* border: 1px solid red; */
+}
+
+.carousel-caption .highlight {
+  color: #da292a; /* soft red, matches your palette */
+  font-weight: bold;
+}
+
+
+.carousel-caption h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffadad;
+  font-size: 4em;
+}
+
+.carousel-caption p {
+  font-size: 1.25rem;
+ 
+}
+
+.second-banner-header {
+    color: #fff !important;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: 100%;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 25%;
+    left: 0;
+    transform: translate(-0, -0);
+    color: #fff;
+    z-index: 3;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* padding: 20px; */
+  }
+  .carousel-caption h1 {
+    font-size: 3rem;
+    /* white-space: nowrap;
+    text-align: center; */
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+}
+
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* change opacity or color as needed */
+  z-index: 2;
+}
+
+.nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.menu-link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+.menu-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #000; /* Highlight color */
+  transition: width 0.3s ease-in-out;
+  /* border: 2px solid #000; */
+  height: 3px;
+  border-radius: 50px;
+}
+
+.menu-link:hover::after {
+  width: 100%;
+}
+
+
