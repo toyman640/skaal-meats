@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}More About Skaal Meats{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<div class="container-fluid py-6 my-6 mt-0"
+     style="background-image: url('{% static 'img/more-info-bg.jpg' %}'); background-position: center; background-attachment: fixed; background-size: cover; height: 60vh; position: relative;">
+    <div style="background-color: rgba(0, 0, 0, 0.8); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div>
+    <div class="container text-center animated bounceInDown" style="position: relative; z-index: 2;">
+        <h1 class="display-1 mb-4 text-white">About Skaal Meats</h1>
+        <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
+            <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'frontend:about_us_view' %}">About</a></li>
+            <li class="breadcrumb-item active text-white" aria-current="page">More Details</li>
+        </ol>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+    <section class="scroll-sync">
+        <div class="row">
+  <!-- Main Text Column -->
+  <div class="col-lg-8 mb-4 col8-content">
+
+    <!-- Overview -->
+    <h2 class="mb-3">Our Story</h2>
+    <p style="font-size: 1.1em;">
+      Established in 2022 and strategically located in Iperu Remo, Ogun State, <strong>Skaal Meats</strong> has rapidly become a trusted name in Nigeria’s meat processing industry.
+      Our state-of-the-art facility reflects our commitment to quality, sustainability, and innovation.
+    </p>
+    <p style="font-size: 1.1em;">
+      We focus on safe, hygienic, and traceable meat production—ensuring that every product that leaves our plant is handled with precision and care. Our dedication to maintaining international food safety standards places us at the forefront of the Nigerian market.
+    </p>
+
+    <!-- Technology & Team -->
+    <h3 class="mt-5 mb-3">World-Class Technology & Expertise</h3>
+    <div class="clearfix mb-4">
+      <img src="{% static 'img/processing-building.jpg' %}" 
+           class="img-fluid rounded float-md-end ms-md-4 mb-3" 
+           style="width: 360px; height: auto; object-fit: cover;" 
+           alt="Processing Facility">
+      <p style="font-size: 1.1em;">
+        At Skaal Meats, we leverage advanced machinery and temperature-controlled environments to ensure the freshness and safety of our products. 
+        Our operations are supported by a highly skilled workforce—comprising technicians, quality assurance officers, and meat specialists—who undergo continuous training on hygiene, animal welfare, and food safety protocols.
+      </p>
+      <p style="font-size: 1.1em;">
+        These professionals work seamlessly across departments to maintain a clean workflow, prevent cross-contamination, and guarantee product integrity from start to finish.
+      </p>
+    </div>
+
+    <!-- Meat Processing Capabilities -->
+    <h3 class="mt-5 mb-3">Meat Processing Excellence</h3>
+    <div class="clearfix mb-4">
+      <img src="{% static 'img/processing-tool.jpg' %}" 
+           class="img-fluid rounded float-md-start me-md-4 mb-3" 
+           style="width: 340px; height: auto; object-fit: cover;" 
+           alt="Meat Processing Tools">
+      <p style="font-size: 1.1em;">
+        Our expertise spans across the processing of <strong>beef, pork, goat,</strong> and <strong>ram meat</strong>. Whether it’s bulk orders for large-scale distributors or smaller batches for niche retailers, we meet every client’s unique specification with consistency.
+      </p>
+      <p style="font-size: 1.1em;">
+        We handle every step—from humane slaughter and deboning to portioning, packaging, and cold chain logistics—with a focus on product traceability and freshness. 
+        Our vacuum-sealed packaging helps maintain shelf life and guarantees hygiene until the point of delivery.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Sidebar Column -->
+  <div class="col-lg-4 col4-wrapper">
+    <div class="bg-light p-4 rounded col4-content">
+      <h4 class="mb-4 text-primary">What Sets Us Apart</h4>
+      <ul class="list-unstyled text-dark" style="font-family: Poppins, sans-serif;">
+        <li class="mb-3">
+          <i class="fas fa-check text-success me-2"></i> 
+          <span class="text-primary">State-of-the-Art</span> Equipment
+        </li>
+        <li class="mb-3">
+          <i class="fas fa-check text-success me-2"></i> 
+          Global <span class="text-primary">Hygiene Standards</span>
+        </li>
+        <li class="mb-3">
+          <i class="fas fa-check text-success me-2"></i> 
+          Expert <span class="text-primary">Butchering & Packaging</span>
+        </li>
+        <li class="mb-3">
+          <i class="fas fa-check text-success me-2"></i> 
+          <span class="text-primary">Reliable</span> Nationwide Distribution
+        </li>
+        <li class="mb-3">
+          <i class="fas fa-check text-success me-2"></i> 
+          <span class="text-primary">Transparent</span>, Customer-Focused Service
+        </li>
+        <li class="mb-3">
+          <i class="fas fa-check text-success me-2"></i> 
+          Trusted by <span class="text-primary">Wholesalers & Retailers</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="skaal-farm-div bg-white shadow rounded mt-4 p-4 text-center col4-content">
+      <img src="{% static 'img/farm-web-big.png' %}" alt="Our Farm" class="img-fluid rounded mb-3" style="max-height: 200px; object-fit: cover;">
+      <h5 class="text-primary fw-bold">Welcome to Our Farm</h5>
+      <p class="text-muted" style="font-family: Poppins, sans-serif;">
+        Take a closer look at the home of our healthy, ethically raised livestock.
+        We prioritize sustainability, animal welfare, and clean processing.
+      </p>
+      <a href="https://skaalfarms.com/" class="btn btn-outline-primary mt-2" target="_blank">
+        Visit Farm Website <i class="fas fa-arrow-right ms-2"></i>
+      </a>
+    </div>
+  </div>
+</div>
+    </section>
+</div>
+
+<!-- Sticky CSS -->
+<style>
+.col4-wrapper { position: relative; }
+.col4-content {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px; /* distance from top when stuck */
+}
+</style>
+
+<!-- Height Sync JS -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const col8 = document.querySelector('.col8-content');
+  const col4Wrapper = document.querySelector('.col4-wrapper');
+
+  if (!col8 || !col4Wrapper) return;
+
+  function syncHeights() {
+    col4Wrapper.style.minHeight = '';
+    col4Wrapper.style.minHeight = col8.offsetHeight + 'px';
+  }
+
+  syncHeights();
+  window.addEventListener('load', syncHeights);
+  window.addEventListener('resize', syncHeights);
+
+  if ('ResizeObserver' in window) {
+    const ro = new ResizeObserver(syncHeights);
+    ro.observe(col8);
+  }
+});
+</script>
+
+{% endblock %}

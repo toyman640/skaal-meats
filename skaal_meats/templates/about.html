@@ -118,7 +118,7 @@
                     <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
                         <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Leading with Precision & Purpose</small>
                         <h1 class="display-5 mb-4">One of the Largest Ultra-Modern Meat Processing Plants in Ogun State</h1>
-                        <p class="mb-4" style="font-size: 1.2em;">
+                        <!-- <p class="mb-4" style="font-size: 1.2em;">
                             Established in 2022 and strategically located in Iperu Remo, Ogun State, our ultra-modern meat processing plant is a benchmark in the Nigerian meat industry. 
                             We are committed to providing safe, hygienic, and high-quality meat products through cutting-edge technology and globally recognized best practices.
                         </p>
@@ -129,7 +129,7 @@
                         <p class="mb-4" style="font-size: 1.2em;">
                             From animal reception to final packaging, every step of our process is carefully monitored to ensure quality, freshness, and compliance with both local and global regulations. 
                             Our dedication to quality has earned us the trust of a growing number of satisfied clients who rely on us for consistent supply and reliable service.
-                        </p>
+                        </p> -->
                         <div class="row g-4 text-dark mb-5">
                             <div class="col-sm-6">
                                 <i class="fas fa-share text-primary me-2"></i>State-of-the-Art Processing Equipment
@@ -150,7 +150,7 @@
                                 <i class="fas fa-share text-primary me-2"></i>Customer-Centric Service Approach
                             </div>
                         </div>
-                        <a href="" class="btn btn-primary py-3 px-5 rounded-pill">Learn More<i class="fas fa-arrow-right ps-2"></i></a>
+                        <a href="{% url 'frontend:more_info_view' %}" class="btn btn-primary py-3 px-5 rounded-pill">Learn More<i class="fas fa-arrow-right ps-2"></i></a>
                     </div>
 
                 </div>
@@ -165,15 +165,16 @@
                         <p class="mb-3" style="font-size: 1.2em;">
                             Our commitment to quality begins at the source. All our cattle, pigs, and sheep are bred and raised on our own farms under strict conventional standards. This gives us full control over the health, nutrition, and living conditions of every animal we process.
                         </p>
-                        <p class="mb-4" style="font-size: 1.2em;">
+                        <!-- <p class="mb-4" style="font-size: 1.2em;">
                             The animals are fed with top-line, nutritionally balanced feeds to ensure proper growth and overall well-being. Our practices prioritize hygiene, humane treatment, and responsible farming techniques to consistently produce meat of the highest quality — safe, wholesome, and flavorful.
-                        </p>
+                        </p> -->
                         <ul class="list-unstyled text-dark">
                             <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Home-bred cattle, pigs, and sheep</li>
                             <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Fed with premium, carefully formulated feed</li>
                             <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Conventional breeding with animal welfare standards</li>
                             <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>100% traceability from farm to processing</li>
                         </ul>
+                        <a href="{% url 'frontend:more_info_view' %}" class="btn btn-primary py-3 px-5 rounded-pill">More<i class="fas fa-arrow-right ps-2"></i></a>
                     </div>
                       <div class="col-lg-5 mb-4 mb-lg-0  wow bounceInUp" data-wow-delay="0.1s">
                         <img src="{% static 'img/about-img-e.jpg' %}" alt="Farm animals" class="img-fluid rounded shadow">
@@ -377,7 +378,7 @@
 
 <style>
   #carouselExample .carousel-item {
-    height: 700px; /* increase or decrease as needed */
+    /* height: 700px; increase or decrease as needed */
   }
   #carouselExample .carousel-inner {
     border-radius: 20px; /* Adjust as needed */

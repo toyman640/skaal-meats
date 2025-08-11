@@ -16,3 +16,7 @@ def contact_us_view(request):
 
 def shop_view(request):
   return render(request, "shop.html")
+
+
+def more_info_view(request):
+  return render(request, "more-info.html")

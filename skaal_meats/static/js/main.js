@@ -127,3 +127,31 @@ console.log(clientHeight);
 //       items: 1
 //     });
 // });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const col8 = document.querySelector(".col8-content");
+//   const col4 = document.querySelector(".col4-content");
+//   alert("hello");
+
+//   const col8Height = col8.scrollHeight;
+//   const col4Height = col4.scrollHeight;
+//   const heightDiff = col8Height - col4Height;
+
+//   window.addEventListener("scroll", () => {
+//     const col8Top = col8.getBoundingClientRect().top;
+//     const col8Bottom = col8.getBoundingClientRect().bottom;
+
+//     // Freeze col-4 when its content finishes
+//     if (col8Top <= 0 && col8Bottom > window.innerHeight) {
+//       if (-col8Top >= heightDiff) {
+//         col4.style.position = "fixed";
+//         col4.style.top = `${-heightDiff}px`;
+//       } else {
+//         col4.style.position = "fixed";
+//         col4.style.top = "0";
+//       }
+//     } else {
+//       col4.style.position = "static";
+//     }
+//   });
+// });

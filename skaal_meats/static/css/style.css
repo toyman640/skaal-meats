@@ -795,7 +795,8 @@ p {
 .carousel-caption h1 {
   font-size: 3rem;
   font-weight: bold;
-  color: #ffadad;
+  /* color: #ffadad; */
+  color: #d99488;
   font-size: 4em;
 }
 
@@ -884,5 +885,41 @@ p {
 .menu-link:hover::after {
   width: 100%;
 }
+
+/* .skaal-farm-div {
+    height: 50vh;
+    border: 5px solid red;
+}
+
+.skaal-farm-div {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skaal-farm-div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+} */
+
+.skaal-farm-div {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skaal-farm-div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* .scroll-sync {
+  position: relative;
+}
+
+.col8-content,
+.col4-content {
+  position: relative;
+} */
+
+/* .col-4-part {
+    position: sticky;
+    border: 1px solid #da292a;
+} */
+
 
 
