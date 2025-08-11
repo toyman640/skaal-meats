@@ -18,5 +18,12 @@ def shop_view(request):
   return render(request, "shop.html")
 
 
+
+
 def more_info_view(request):
-  return render(request, "more-info.html")
+  content_id = request.GET.get("content", "1")  # Default to content 1 if missing
+  return render(request, "more-info.html", {"content_id": content_id})
+
+
+def error_404_view(request, exception=None):
+  return render(request, "404.html", status=404)

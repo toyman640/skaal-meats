@@ -20,101 +20,152 @@
 
 <!-- Main Content -->
 <div class="container">
-    <section class="scroll-sync">
-        <div class="row">
-  <!-- Main Text Column -->
-  <div class="col-lg-8 mb-4 col8-content">
+  <section class="scroll-sync">
+    <div class="row">
+      <!-- Main Text Column -->
+      {% if content_id == "2" %}
+        <div class="col-lg-8 mb-4 col8-content">
 
-    <!-- Overview -->
-    <h2 class="mb-3">Our Story</h2>
-    <p style="font-size: 1.1em;">
-      Established in 2022 and strategically located in Iperu Remo, Ogun State, <strong>Skaal Meats</strong> has rapidly become a trusted name in Nigeria’s meat processing industry.
-      Our state-of-the-art facility reflects our commitment to quality, sustainability, and innovation.
-    </p>
-    <p style="font-size: 1.1em;">
-      We focus on safe, hygienic, and traceable meat production—ensuring that every product that leaves our plant is handled with precision and care. Our dedication to maintaining international food safety standards places us at the forefront of the Nigerian market.
-    </p>
+          <!-- Overview -->
+          <h2 class="mb-3">Our Farm-to-Table Approach</h2>
+          <p style="font-size: 1.1em;">
+            Based in Ogun State, <strong>Solomon Kesinton Agro Allied Limited</strong> stands as one of the largest and most reputable farms in the region. 
+            Our expansive facilities are built to international standards, ensuring both scale and sustainability in our livestock operations.
+          </p>
+          <p style="font-size: 1.1em;">
+            From the moment our animals are born to the day their produce reaches your table, we maintain full control over every step. 
+            This guarantees not only exceptional quality but also transparency and traceability — the true essence of farm-to-table.
+          </p>
 
-    <!-- Technology & Team -->
-    <h3 class="mt-5 mb-3">World-Class Technology & Expertise</h3>
-    <div class="clearfix mb-4">
-      <img src="{% static 'img/processing-building.jpg' %}" 
-           class="img-fluid rounded float-md-end ms-md-4 mb-3" 
-           style="width: 360px; height: auto; object-fit: cover;" 
-           alt="Processing Facility">
-      <p style="font-size: 1.1em;">
-        At Skaal Meats, we leverage advanced machinery and temperature-controlled environments to ensure the freshness and safety of our products. 
-        Our operations are supported by a highly skilled workforce—comprising technicians, quality assurance officers, and meat specialists—who undergo continuous training on hygiene, animal welfare, and food safety protocols.
-      </p>
-      <p style="font-size: 1.1em;">
-        These professionals work seamlessly across departments to maintain a clean workflow, prevent cross-contamination, and guarantee product integrity from start to finish.
-      </p>
+          <!-- Facilities & Animal Care -->
+          <h3 class="mt-5 mb-3">State-of-the-Art Facilities & Expert Care</h3>
+          <div class="clearfix mb-4">
+            <img src="{% static 'img/log-bg.jpg' %}" 
+                class="img-fluid rounded float-md-end ms-md-4 mb-3" 
+                style="width: 360px; height: 200px; object-fit: cover;" 
+                alt="Farm Facility">
+            <p style="font-size: 1.1em;">
+              Our farm is equipped with infrastructure that can comfortably house over <strong>20,000 pigs</strong> and <strong>5,000 cows</strong>, 
+              with dedicated spaces tailored to the specific needs of each species. The layout is designed to optimize space, hygiene, and animal comfort.
+            </p>
+            <p style="font-size: 1.1em;">
+              We feed our livestock only with top-of-the-line, nutrient-rich feeds, formulated to promote healthy growth, strong immunity, and superior meat quality. 
+              Every animal receives round-the-clock attention from experienced veterinary professionals who ensure they remain healthy and stress-free.
+            </p>
+          </div>
+
+          <!-- Healthy Growth Environment -->
+          <h3 class="mt-5 mb-3">A Clean, Healthy & Serene Environment</h3>
+          <div class="clearfix mb-4">
+            <img src="{% static 'img/merge.jpg' %}" 
+                class="img-fluid rounded float-md-start me-md-4 mb-3" 
+                style="width: 340px; height: 200px; object-fit: cover;" 
+                alt="Healthy Livestock">
+            <p style="font-size: 1.1em;">
+              Our animals thrive in a serene, clean, and well-ventilated environment. We believe that a stress-free habitat produces not only happier animals 
+              but also better-tasting, healthier meat for our customers.
+            </p>
+            <p style="font-size: 1.1em;">
+              Every detail — from airflow to waste management — is handled with precision to maintain cleanliness and prevent disease. 
+              This holistic approach ensures that our farm-to-table promise is backed by uncompromising quality at every stage.
+            </p>
+          </div>
+
+        </div>
+      {% elif content_id == "1" %}
+        <div class="col-lg-8 mb-4 col8-content">
+
+          <!-- Overview -->
+          <h2 class="mb-3">Our Story</h2>
+          <p style="font-size: 1.1em;">
+            Established in 2022 and strategically located in Iperu Remo, Ogun State, <strong>Skaal Meats</strong> has rapidly become a trusted name in Nigeria’s meat processing industry.
+            Our state-of-the-art facility reflects our commitment to quality, sustainability, and innovation.
+          </p>
+          <p style="font-size: 1.1em;">
+            We focus on safe, hygienic, and traceable meat production—ensuring that every product that leaves our plant is handled with precision and care. Our dedication to maintaining international food safety standards places us at the forefront of the Nigerian market.
+          </p>
+
+          <!-- Technology & Team -->
+          <h3 class="mt-5 mb-3">World-Class Technology & Expertise</h3>
+          <div class="clearfix mb-4">
+            <img src="{% static 'img/processing-building.jpg' %}" 
+                class="img-fluid rounded float-md-end ms-md-4 mb-3" 
+                style="width: 360px; height: auto; object-fit: cover;" 
+                alt="Processing Facility">
+            <p style="font-size: 1.1em;">
+              At Skaal Meats, we leverage advanced machinery and temperature-controlled environments to ensure the freshness and safety of our products. 
+              Our operations are supported by a highly skilled workforce—comprising technicians, quality assurance officers, and meat specialists—who undergo continuous training on hygiene, animal welfare, and food safety protocols.
+            </p>
+            <p style="font-size: 1.1em;">
+              These professionals work seamlessly across departments to maintain a clean workflow, prevent cross-contamination, and guarantee product integrity from start to finish.
+            </p>
+          </div>
+
+          <!-- Meat Processing Capabilities -->
+          <h3 class="mt-5 mb-3">Meat Processing Excellence</h3>
+          <div class="clearfix mb-4">
+            <img src="{% static 'img/processing-tool.jpg' %}" 
+                class="img-fluid rounded float-md-start me-md-4 mb-3" 
+                style="width: 340px; height: auto; object-fit: cover;" 
+                alt="Meat Processing Tools">
+            <p style="font-size: 1.1em;">
+              Our expertise spans across the processing of <strong>beef, pork, goat,</strong> and <strong>ram meat</strong>. Whether it’s bulk orders for large-scale distributors or smaller batches for niche retailers, we meet every client’s unique specification with consistency.
+            </p>
+            <p style="font-size: 1.1em;">
+              We handle every step—from humane slaughter and deboning to portioning, packaging, and cold chain logistics—with a focus on product traceability and freshness. 
+              Our vacuum-sealed packaging helps maintain shelf life and guarantees hygiene until the point of delivery.
+            </p>
+          </div>
+
+        </div>
+
+      {% endif %}
+      <!-- Sidebar Column -->
+      <div class="col-lg-4 col4-wrapper">
+        <div class="bg-light p-4 rounded col4-content">
+          <h4 class="mb-4 text-primary">What Sets Us Apart</h4>
+          <ul class="list-unstyled text-dark" style="font-family: Poppins, sans-serif;">
+            <li class="mb-3">
+              <i class="fas fa-check text-success me-2"></i> 
+              <span class="text-primary">State-of-the-Art</span> Equipment
+            </li>
+            <li class="mb-3">
+              <i class="fas fa-check text-success me-2"></i> 
+              Global <span class="text-primary">Hygiene Standards</span>
+            </li>
+            <li class="mb-3">
+              <i class="fas fa-check text-success me-2"></i> 
+              Expert <span class="text-primary">Butchering & Packaging</span>
+            </li>
+            <li class="mb-3">
+              <i class="fas fa-check text-success me-2"></i> 
+              <span class="text-primary">Reliable</span> Nationwide Distribution
+            </li>
+            <li class="mb-3">
+              <i class="fas fa-check text-success me-2"></i> 
+              <span class="text-primary">Transparent</span>, Customer-Focused Service
+            </li>
+            <li class="mb-3">
+              <i class="fas fa-check text-success me-2"></i> 
+              Trusted by <span class="text-primary">Wholesalers & Retailers</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skaal-farm-div bg-white shadow rounded mt-4 p-4 text-center col4-content">
+          <img src="{% static 'img/farm-web-big.png' %}" alt="Our Farm" class="img-fluid rounded mb-3" style="max-height: 200px; object-fit: cover;">
+          <h5 class="text-primary fw-bold">Welcome to Our Farm</h5>
+          <p class="text-muted" style="font-family: Poppins, sans-serif;">
+            Take a closer look at the home of our healthy, ethically raised livestock.
+            We prioritize sustainability, animal welfare, and clean processing.
+          </p>
+          <a href="https://skaalfarms.com/" class="btn btn-outline-primary mt-2" target="_blank">
+            Visit Farm Website <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
     </div>
-
-    <!-- Meat Processing Capabilities -->
-    <h3 class="mt-5 mb-3">Meat Processing Excellence</h3>
-    <div class="clearfix mb-4">
-      <img src="{% static 'img/processing-tool.jpg' %}" 
-           class="img-fluid rounded float-md-start me-md-4 mb-3" 
-           style="width: 340px; height: auto; object-fit: cover;" 
-           alt="Meat Processing Tools">
-      <p style="font-size: 1.1em;">
-        Our expertise spans across the processing of <strong>beef, pork, goat,</strong> and <strong>ram meat</strong>. Whether it’s bulk orders for large-scale distributors or smaller batches for niche retailers, we meet every client’s unique specification with consistency.
-      </p>
-      <p style="font-size: 1.1em;">
-        We handle every step—from humane slaughter and deboning to portioning, packaging, and cold chain logistics—with a focus on product traceability and freshness. 
-        Our vacuum-sealed packaging helps maintain shelf life and guarantees hygiene until the point of delivery.
-      </p>
-    </div>
-
-  </div>
-
-  <!-- Sidebar Column -->
-  <div class="col-lg-4 col4-wrapper">
-    <div class="bg-light p-4 rounded col4-content">
-      <h4 class="mb-4 text-primary">What Sets Us Apart</h4>
-      <ul class="list-unstyled text-dark" style="font-family: Poppins, sans-serif;">
-        <li class="mb-3">
-          <i class="fas fa-check text-success me-2"></i> 
-          <span class="text-primary">State-of-the-Art</span> Equipment
-        </li>
-        <li class="mb-3">
-          <i class="fas fa-check text-success me-2"></i> 
-          Global <span class="text-primary">Hygiene Standards</span>
-        </li>
-        <li class="mb-3">
-          <i class="fas fa-check text-success me-2"></i> 
-          Expert <span class="text-primary">Butchering & Packaging</span>
-        </li>
-        <li class="mb-3">
-          <i class="fas fa-check text-success me-2"></i> 
-          <span class="text-primary">Reliable</span> Nationwide Distribution
-        </li>
-        <li class="mb-3">
-          <i class="fas fa-check text-success me-2"></i> 
-          <span class="text-primary">Transparent</span>, Customer-Focused Service
-        </li>
-        <li class="mb-3">
-          <i class="fas fa-check text-success me-2"></i> 
-          Trusted by <span class="text-primary">Wholesalers & Retailers</span>
-        </li>
-      </ul>
-    </div>
-
-    <div class="skaal-farm-div bg-white shadow rounded mt-4 p-4 text-center col4-content">
-      <img src="{% static 'img/farm-web-big.png' %}" alt="Our Farm" class="img-fluid rounded mb-3" style="max-height: 200px; object-fit: cover;">
-      <h5 class="text-primary fw-bold">Welcome to Our Farm</h5>
-      <p class="text-muted" style="font-family: Poppins, sans-serif;">
-        Take a closer look at the home of our healthy, ethically raised livestock.
-        We prioritize sustainability, animal welfare, and clean processing.
-      </p>
-      <a href="https://skaalfarms.com/" class="btn btn-outline-primary mt-2" target="_blank">
-        Visit Farm Website <i class="fas fa-arrow-right ms-2"></i>
-      </a>
-    </div>
-  </div>
-</div>
-    </section>
+  </section>
 </div>
 
 <!-- Sticky CSS -->
