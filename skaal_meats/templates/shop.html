@@ -137,48 +137,57 @@
                     <img src="{% static 'img/book-left.jpg' %}" class="img-fluid h-100 w-100 rounded-start" style="object-fit: cover; opacity: 0.7;" alt="">
                 </div>
                 <div class="col-10">
-                    <div class="border-bottom border-top border-primary bg-light py-5 px-4">
+                    <div id="bookings" class="border-bottom border-top border-primary bg-light py-5 px-4">
                         <div class="text-center">
                             <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Bookings</small>
                             <h1 class="display-5 mb-5">Place Bookings</h1>
                         </div>
-                       
-                        <div class="row g-4 form">
-                            <div class="col-lg-4 col-md-6">
-                                <input type="text" class="form-control border-primary p-2" placeholder="Full Name" required>
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <div class="row g-4 form">
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="text" name="name" class="form-control border-primary p-2" placeholder="Full Name" required>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="email" name="email" class="form-control border-primary p-2" placeholder="Email Address" required>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="tel" name="phone" class="form-control border-primary p-2" placeholder="Phone Number">
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="text" name="company" class="form-control border-primary p-2" placeholder="Company Name (Optional)">
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select name="product" class="form-select border-primary p-2" required>
+                                        <option selected disabled>Select Product of Interest</option>
+                                        <option value="Cattle(Beef)">Cattle(Beef)</option>
+                                        <option value="Pig(Pork)">Pig(Pork)</option>
+                                        <option value="Goat(Chevon)">Goat(Chevon)</option>
+                                        <!-- Add more as needed -->
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="number" name="quantity" min="0" step="1" class="form-control border-primary p-2" placeholder="Quantity/KG (e.g. 200)">
+                                </div>
+                                <!-- <div class="col-lg-4 col-md-6">
+                                    <input type="date" class="form-control border-primary p-2" placeholder="Preferred Delivery Date">
+                                </div> -->
+                                <div class="col-12">
+                                    <textarea name="message" class="form-control border-primary p-2" rows="4" placeholder="Message..."></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Place Booking</button>
+                                </div>
                             </div>
-                            <div class="col-lg-4 col-md-6">
-                                <input type="email" class="form-control border-primary p-2" placeholder="Email Address" required>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <input type="tel" class="form-control border-primary p-2" placeholder="Phone Number">
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <input type="text" class="form-control border-primary p-2" placeholder="Company Name (Optional)">
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <select class="form-select border-primary p-2" required>
-                                    <option selected disabled>Select Product of Interest</option>
-                                    <option value="cassava">Cattle</option>
-                                    <option value="maize">Pig</option>
-                                    <option value="palm_oil">Goat</option>
-                                    <!-- Add more as needed -->
-                                </select>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <input type="number" min="0" step="1" class="form-control border-primary p-2" placeholder="Quantity/KG (e.g. 200)">
-                            </div>
-                            <!-- <div class="col-lg-4 col-md-6">
-                                <input type="date" class="form-control border-primary p-2" placeholder="Preferred Delivery Date">
-                            </div> -->
-                            <div class="col-12">
-                                <textarea class="form-control border-primary p-2" rows="4" placeholder="Message..."></textarea>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Place Booking</button>
-                            </div>
+                        </form>
+                        {% if success %}
+                        <div id="success-alert" class="alert alert-success text-center mt-3">
+                            ✅ Your message has been sent successfully. We’ll get back to you shortly.
                         </div>
-                        
+                        <script>
+                            setTimeout(() => document.getElementById("success-alert")?.remove(), 3000);
+                        </script>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="col-1">

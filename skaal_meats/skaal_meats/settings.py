@@ -106,6 +106,18 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# settings.py
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "mail.skaalmeats.com"
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True   # since cPanel uses SSL on port 465
+EMAIL_USE_TLS = False  # don't set this to True if using SSL
+EMAIL_HOST_USER = "admin-server@skaalmeats.com"
+EMAIL_HOST_PASSWORD = "FTB~T_0E;tI)"  # replace with the actual password
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
